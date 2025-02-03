@@ -23,8 +23,10 @@ You can read more about CircleCI API token in the CircleCI docs here: https://ci
          Note: your org ID can be found on your organization settings page in CircleCI: https://circleci.com/docs/introduction-to-the-circleci-web-app/#organization-settings
 
 3. **make the script executable** 
+    ```bash
     chmod +x circleci_usage_export.sh
 
 4. **Import environment variables and execute script**
+    ```bash
     set -o allexport; source .env; set +o allexport
     ./circleci_usage_export.sh
