@@ -13,7 +13,7 @@ You can read more about CircleCI API token in the CircleCI docs here: https://ci
 
 1. **Clone this repository** 
    ```bash
-   git clone https://github.com/HennaAbbas/generate_cci_usage_report.git
+   git clone https://github.com/CircleCI-Public/generate_cci_usage_report.git
    cd generate_cci_usage_report
    
 2. **update environment variables**
