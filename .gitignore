@@ -1,0 +1,2 @@
+#.env 
+#uncomment line 1 to add the .env file to exclude the file when pushing to GitHub. You can read more about the .gitignore file here:https://git-scm.com/docs/gitignore 
