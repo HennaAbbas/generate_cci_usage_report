@@ -59,13 +59,21 @@ if [[ "$job_state" == "completed" ]]; then
   done
 
   echo "All files downloaded successfully."
+
+  # Unzip the downloaded .csv.gz file and rename it
+  for file in *.csv.gz; do
+    if [[ -f "$file" ]]; then
+      echo "Unzipping $file..."
+      gunzip -c "$file" > "${START_DATE}_to_${END_DATE}_${ORG_ID}.csv"
+      echo "Renamed to ${START_DATE}_to_${END_DATE}_${ORG_ID}.csv"
+    fi
+  done
 else
   echo "Job has finished with state: $job_state"
   if [[ "$job_state" == "processing" ]]; then
     echo "Max attempts reached. Job is still processing."
   fi
 fi
-
 
 
 
